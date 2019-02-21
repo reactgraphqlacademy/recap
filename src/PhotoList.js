@@ -21,14 +21,19 @@ class PhotoList extends Component {
   }
 
   render() {
-    
+    let photos
+    if (this.state.photos.length) {
+      photos = this.state.photos.map(photo =>
+        <Link to={`/${photo.id}`}><img src={photo.thumbnailUrl}></img></Link>
+      )
+    } else {
+      photos = 'loading...'
+    }
 
     return (
       <React.Fragment>
         <h1>photo list</h1>
-        {this.state.photos.map(photo =>
-        <img src={photo.thumbnailUrl}></img>
-      )}
+        {photos}
       </React.Fragment>
     )
   }
