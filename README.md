@@ -1,6 +1,7 @@
 # Recap 1
 
-The goals of this exercise is to create a photo application with React.
+The goals of this exercise is to create a photo application with React and consolidate some of the foundational concepts you've seen so far. 
+
 
 ## Exercise
 
@@ -26,6 +27,18 @@ Use `react-router` v4 for the routing:
 ```
 npm install --save react-router-dom
 ```
+
+## Core learning objectives to be consolidated 
+
+- Componentization, folder structure and thinking in React
+  - Think about the structure of your application, do the files mirror your component tree?
+  - What about applying a pattern that we saw earlier to separate UI and logic?
+- Data fetching
+  - Where should we do our data fetching in a React App?
+  - Remember to look at the [fetch docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- Routing
+  - Remember, in react we need to install [react-router](https://reacttraining.com/react-router/)
+  - You'll need to implement at least 2 routes, where should you declare these routes?
 
 ## Bonus
 
