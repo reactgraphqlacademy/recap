@@ -1,11 +1,10 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./Header";
-
 import Photos from "./Photos";
 
 const App = () => (
-  <div className="App">
+  <React.Fragment>
     <Header />
     <section>
       <Switch>
@@ -13,7 +12,7 @@ const App = () => (
         <Route path="/photos" component={Photos} />
       </Switch>
     </section>
-  </div>
+  </React.Fragment>
 );
 
 export default App;

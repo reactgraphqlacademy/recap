@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { fetchPhoto } from "../../../api/photos";
 import Loading from "../../Loading";
-import PhotoDetail from "./PhotoDetail";
+import Detail from "./Detail";
 
 class PhotoDetailContainer extends Component {
   constructor() {
     super();
     this.state = {
-      photo: {}
+      photo: null
     };
   }
 
@@ -19,14 +19,11 @@ class PhotoDetailContainer extends Component {
 
   render() {
     const { photo } = this.state;
-    console.log(photo);
-    let content;
-    if (!photo || !photo.id) {
-      content = <Loading />;
+    if (!photo) {
+      return <Loading />;
     } else {
-      content = <PhotoDetail photo={photo} />;
+      return <Detail photo={photo} />;
     }
-    return content;
   }
 }
 
