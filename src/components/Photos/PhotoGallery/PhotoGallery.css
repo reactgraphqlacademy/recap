@@ -1,0 +1,11 @@
+.photo-gallery {
+  margin: 24px auto;
+  max-width: 830px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-thumbnail {
+  margin: 8px;
+}
