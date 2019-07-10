@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
-import PhotoList from './PhotoList'
-import Photo from './Photo'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PhotoList from "./PhotoList";
+import Photo from "./Photo";
 
 const Root = () => (
-  <Router >
+  <Router>
     <Switch>
-      <Route exact path="/:id" component={Photo} />
-      <Route path="/" component={PhotoList}/>
+      <Route exact path="/" component={PhotoList} />
+      <Route path="/:id" component={Photo} />
     </Switch>
   </Router>
-)
+);
 
-export default Root
+export default Root;

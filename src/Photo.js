@@ -1,42 +1,35 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Photo extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      photo: {}
-    }
+      photo: null
+    };
   }
 
   componentDidMount() {
-    console.log(this.props)
-    const photoId = this.props.match.params.id
-    fetch(`http://jsonplaceholder.typicode.com/photos/${photoId}`, {
-    method: 'get',
-  })
-  .then(response => response.json())
-  .then(photo => {
-    console.log(photo)
-    this.setState({ photo })
-  })
+    const photoId = this.props.match.params.id;
 
+    fetch(`http://jsonplaceholder.typicode.com/photos/${photoId}`)
+      .then(response => response.json())
+      .then(photo => {
+        this.setState({ photo });
+      });
   }
 
   render() {
-    const url = this.state.photo.thumbnailUrl
-    let photo
-    if (this.state.photo !== {}) {
-      photo =  <img src={url}></img>
-    } else {
-      photo = 'loading...'
+    const { photo } = this.state;
+    if (!this.state.photo) {
+      return <h1>Loading</h1>;
     }
 
     return (
       <React.Fragment>
-        <h1>photo {this.state.photo.id}</h1>
-        {photo}
+        <h1>photo {photo.id}</h1>
+        <img src={photo.thumbnailUrl} />
       </React.Fragment>
-    )
+    );
   }
 }
 
