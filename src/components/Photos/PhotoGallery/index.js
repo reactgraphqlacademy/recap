@@ -1,27 +1,18 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { fetchPhotos } from "../../../api/photos";
 import Loading from "../../Loading";
 import Gallery from "./Gallery";
 
-class PhotoGalleryContainer extends Component {
-  constructor() {
-    super();
-    this.state = {
-      photos: []
-    };
-  }
+const PhotoGalleryContainer = ({ match }) => {
+  const [photos, setPhotos] = useState([]);
 
-  componentDidMount() {
-    fetchPhotos().then(photos => this.setState({ photos }));
-  }
+  useEffect(() => {
+    fetchPhotos().then(setPhotos);
+  }, []);
 
-  render() {
-    const { photos } = this.state;
-    const { match } = this.props;
-    if (!photos.length) return <Loading />;
+  if (!photos.length) return <Loading />;
 
-    return <Gallery photos={this.state.photos} match={match} />;
-  }
-}
+  return <Gallery photos={photos} match={match} />;
+};
 
 export default PhotoGalleryContainer;

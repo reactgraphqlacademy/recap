@@ -1,30 +1,24 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { fetchPhoto } from "../../../api/photos";
 import Loading from "../../Loading";
 import Detail from "./Detail";
 
-class PhotoDetailContainer extends Component {
-  constructor() {
-    super();
-    this.state = {
-      photo: null
-    };
+const PhotoDetailContainer = ({
+  match: {
+    params: { id }
   }
+}) => {
+  const [photo, setPhoto] = useState();
 
-  componentDidMount() {
-    fetchPhoto(this.props.match.params.id).then(photo =>
-      this.setState({ photo })
-    );
-  }
+  useEffect(() => {
+    fetchPhoto(id).then(setPhoto);
+  }, []);
 
-  render() {
-    const { photo } = this.state;
-    if (!photo) {
-      return <Loading />;
-    } else {
-      return <Detail photo={photo} />;
-    }
+  if (!photo) {
+    return <Loading />;
+  } else {
+    return <Detail photo={photo} />;
   }
-}
+};
 
 export default PhotoDetailContainer;
