@@ -9,9 +9,14 @@ The goals of this exercise is to create a photo application with React and conso
   - [http://jsonplaceholder.typicode.com/](http://jsonplaceholder.typicode.com/)
   - [Rick & Morty](https://rickandmortyapi.com/)
 - [ ] Create your app using `create-react-app`
+If you use http://jsonplaceholder.typicode.com:
 - [ ] There should be a page that displays a list of photos in the following path `/photos`
 - [ ] There should be a page that displays a single photo in the following path `/photos/:id`
 - [ ] When the user clicks on a photo in `/photos` the app should take the user to `/photos/:id`
+Else if you use https://rickandmortyapi.com/:
+- [ ] There should be a page that displays a list of characters in the following path `/characters`
+- [ ] There should be a page that displays a single character in the following path `/characters/:id`
+- [ ] When the user clicks on a character in `/characters` the app should take the user to `/characters/:id`
 
 ### Notes
 
