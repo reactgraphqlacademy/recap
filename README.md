@@ -22,7 +22,8 @@ Else if you use https://rickandmortyapi.com/:
 - [ ] There should be a page that displays a single character in the following path `/characters/:id`
 - [ ] When the user clicks on a character in `/characters` the app should take the user to `/characters/:id`
 
-### Additional requirements
+
+### Additional requirements
 - If you reload the detail page, example `/characters/1` or `/photos/1`, it should display the page with the data.
 
 ### Notes
