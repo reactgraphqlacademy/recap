@@ -12,14 +12,16 @@ The goals of this exercise is to create a photo application with React and conso
 
 If you use http://jsonplaceholder.typicode.com:
 
-- [ ] There should be a page that displays a list of photos in the following path `/photos`
-- [ ] There should be a page that displays a single photo in the following path `/photos/:id`
+- [ ] There should be a page that displays a list of photos in the following path `/photos`. You can fetch the photos from this endpoint http://jsonplaceholder.typicode.com/photos?_limit=30
+- [ ] There should be a page that displays a single photo in the following path `/photos/:id`. Endpoint example http://jsonplaceholder.typicode.com/photos/12.  You have more info about the API on its [docs](http://jsonplaceholder.typicode.com/)
 - [ ] When the user clicks on a photo in `/photos` the app should take the user to `/photos/:id`
 
 Else if you use https://rickandmortyapi.com/:
 
-- [ ] There should be a page that displays a list of characters in the following path `/characters`
-- [ ] There should be a page that displays a single character in the following path `/characters/:id`
+- [ ] There should be a page that displays a list of characters in the following path `/characters`. You can fetch the photos from this endpoint https://rickandmortyapi.com/api/character/
+
+- [ ] There should be a page that displays a single character in the following path `/characters/:id`. Endpoint example https://rickandmortyapi.com/api/character/2. You have more info about the API on its [docs](https://rickandmortyapi.com/documentation/#rest).
+
 - [ ] When the user clicks on a character in `/characters` the app should take the user to `/characters/:id`
 
 
