@@ -8,7 +8,7 @@ The goals of this exercise is to create a photo application with React and conso
 - [ ] Choose your photo-like api:
   - [http://jsonplaceholder.typicode.com/](http://jsonplaceholder.typicode.com/)
   - [Rick & Morty](https://rickandmortyapi.com/)
-- [ ] Create your app using `create-react-app`. Follow this [link](https://github.com/facebook/create-react-app#quick-overview) to learn how to get started with `create-react-app` if you haven't used it before. You'll need to follow the instructions from the link and execute 3 commands to create your app using.
+- [ ] Create your app using `create-react-app`. Follow this [link](https://github.com/facebook/create-react-app#quick-overview) to learn how to get started with `create-react-app` if you haven't used it before. You'll need to follow the instructions from the link and execute 3 commands to create your app.
 
 If you use http://jsonplaceholder.typicode.com:
 
