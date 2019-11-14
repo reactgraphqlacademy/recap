@@ -35,7 +35,7 @@ Don't forget the `_limit=30` parameter at the end of the query or it will be slo
 
 To fetch a single photo use [http://jsonplaceholder.typicode.com/photos/<PHOTO_ID>](http://jsonplaceholder.typicode.com/photos/3)
 
-Use `react-router` v4 for the routing:
+Use `react-router` for the routing:
 
 ```
 npm install --save react-router-dom
