@@ -45,15 +45,9 @@ npm install --save react-router-dom
 
 ## Core learning objectives to be consolidated 
 
-- Composition, folder structure and thinking in React
-  - Think about the structure of your application, do the files mirror your component tree?
-  - What about applying a pattern that we saw earlier to separate UI and logic?
+- React composition model
 - Data fetching
-  - Where should we do our data fetching in a React App?
-  - Remember to look at the [fetch docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- Routing
-  - Remember, in react we need to install [react-router](https://reacttraining.com/react-router/)
-  - You'll need to implement at least 2 routes, where should you declare these routes?
+- Declarative Routing
 
 ## Bonus
 
