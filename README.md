@@ -57,6 +57,13 @@ npm install --save react-router-dom
 
 ## Bonus
 
+- Create your own `Link` component that composes with the `Link` component from "react-router-dom". Your `Link` component will add a prop `rel="nofollow noopener"` to the react-router-dom `Link` if the link points `to` an external link. You can use the following snippet to determine if the `to` prop is an external link: 
+
+```
+if (props.to && props.to.match(/^(https:\/\/*|http:\/\/*|mailto:*)/)) {
+ // it's an external lin
+}
+```
 - [ ] Add some style with [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/) or [http://material-ui.com/](http://material-ui.com/)
 - [ ] Using this endpoint [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts), create a page that displays a list of posts in the following path: [http://localhost:3000/posts](http://localhost:3000/posts)
 - [ ] Add a form at the top of the page to add a new post. This url [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts) also accepts the verb "POST" to add a new post
