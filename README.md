@@ -55,7 +55,7 @@ npm install --save react-router-dom
 
 ```
 if (props.to && props.to.match(/^(https:\/\/*|http:\/\/*|mailto:*)/)) {
- // it's an external lin
+ // it's an external link
 }
 ```
 - [ ] Add some style with [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/) or [http://material-ui.com/](http://material-ui.com/)
