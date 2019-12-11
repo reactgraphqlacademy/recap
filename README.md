@@ -45,7 +45,7 @@ npm install --save react-router-dom
 
 ## Core learning objectives to be consolidated 
 
-- Componentization, folder structure and thinking in React
+- Composition, folder structure and thinking in React
   - Think about the structure of your application, do the files mirror your component tree?
   - What about applying a pattern that we saw earlier to separate UI and logic?
 - Data fetching
