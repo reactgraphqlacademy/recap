@@ -51,7 +51,7 @@ npm install --save react-router-dom
 
 ## Bonus
 
-- [ ] Create your own `Link` component that composes with the `Link` component from "react-router-dom". Your `Link` component will add a prop `rel="nofollow noopener"` to the react-router-dom `Link` if the link points `to` an external link. You can use the following snippet to determine if the `to` prop is an external link: 
+- [ ] Create your own `Link` component that composes with the `Link` component from "react-router-dom". Your `Link` component will add two props: 1) `rel="nofollow noopener"` and 2) `target="_blank"` to the react-router-dom `Link` if the link points `to` an external link. You can use the following snippet to determine if the `to` prop is an external link: 
 
 ```
 if (props.to && props.to.match(/^(https:\/\/*|http:\/\/*|mailto:*)/)) {
